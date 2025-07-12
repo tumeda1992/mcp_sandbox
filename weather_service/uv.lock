@@ -266,8 +266,14 @@ name = "weather-service"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "httpx" },
     { name = "mcp" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "mcp", specifier = ">=1.6.0" }]
+requires-dist = [
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "mcp", specifier = ">=1.6.0" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
+]

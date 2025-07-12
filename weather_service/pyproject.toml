@@ -4,7 +4,11 @@ version = "0.1.0"
 description = "A MCP server project"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [ "mcp>=1.6.0",]
+dependencies = [
+ "httpx>=0.28.1",
+ "mcp>=1.6.0",
+ "python-dotenv>=1.1.0",
+]
 [[project.authors]]
 name = "setsumaru1992"
 email = "setsumaru1992@gmail.com"
