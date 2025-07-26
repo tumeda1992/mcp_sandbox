@@ -30,6 +30,7 @@ class MCPClient {
   
   async connectToServer(serverScriptPath: string) {
     try {
+      // これはチュートリアル上の形式上のチェックで、別にRubyとか別言語にもSDKがあるからMCPサーバは別言語でも建てられる
       const isJs = serverScriptPath.endsWith(".js");
       const isPy = serverScriptPath.endsWith(".py");
       if (!isJs && !isPy) {
